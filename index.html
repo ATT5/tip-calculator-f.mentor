@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Tip calculator app</title>
+  </head>
+  <body>
+    <div class="title-t">
+      <img src="images/logo.svg" alt="" />
+    </div>
+    <div class="container">
+      <div class="left">
+        <div class="bill">
+          <h3>Bill</h3>
+          <div class="wrapper">
+            <input
+              class="total-bill"
+              placeholder="0.00"
+              type="text"
+              dir="rtl"
+              autocomplete="off"
+            />
+          </div>
+          <div class="buttons">
+            <button class="one btn tip-porcentache activated" value="5">
+              5%
+            </button>
+            <button class="two btn tip-porcentache" value="10">10%</button>
+            <button class="three btn tip-porcentache" value="15">15%</button>
+            <button class="four btn tip-porcentache" value="25">25%</button>
+            <button class="five btn tip-porcentache" value="50">50%</button>
+            <input
+              type="text"
+              class="six tip-porcentache"
+              placeholder="Custom"
+              autocomplete="off"
+            />
+          </div>
+        </div>
+        <div class="num-people">
+          <h3>Number of People</h3>
+          <div class="wrapper">
+            <input
+              type="text"
+              class="people"
+              dir="rtl"
+              placeholder="1"
+              autocomplete="off"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="tips">
+        <div class="a">
+          <p class="tips-title">Tip Amount</p>
+          <p class="psn">/ person</p>
+        </div>
+        <div class="b"><p class="result amount">$0.00</p></div>
+        <div class="c">
+          <p class="tips-title">Total</p>
+          <p class="psn">/ person</p>
+        </div>
+        <div class="d"><p class="result total">$0.00</p></div>
+        <div class="f"><button class="reset">RESET</button></div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
